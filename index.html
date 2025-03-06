@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no" maximum-scale="1" minimum-scale="1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Belajar Vite</title>
+        <style>
+            @import url("style.css");
+        </style>
+    </head>
+    <body>
+        <h1>Hallo Vite</h1>
+        <script type="module" >
+            import { sayHello } from './say-hello.js'
+            import { sayGoodbye } from './say-goodbye.ts'
+            import { v4 } from 'uuid'
+
+            sayHello('mr. Husnul hmd');
+            sayGoodbye('mr. ankara');
+            console.log(v4());
+        </script>
+    </body>
+</html>
